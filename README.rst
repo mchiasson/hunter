@@ -1,7 +1,8 @@
-Hunter
-======
+Hunter CI testing
+=================
 
-|gitter| |rtfd| |travis| |appveyor| |license|
+This repository is for deep per-package testing.
+The only pull requests accepting here is about continuous integration testing on Travis/AppVeyor, i.e. should only affect ``.travis.yml`` or ``appveyor.yml`` (in some rare cases ``jenkins.py``). Please contribute other stuff to https://github.com/ruslo/hunter.
 
 CMake driven cross-platform package manager for C/C++.
 Linux, Windows, macOS, iOS, Android, Raspberry Pi, etc.

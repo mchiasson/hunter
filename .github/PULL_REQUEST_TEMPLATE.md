@@ -1,14 +1,16 @@
-<!--- Use this part of template if you're adding new package. Remove the rest. -->
-<!--- BEGIN -->
+<!--- Please check that your pull request satisfy all requirements -->
 
-* I've followed [this guide](https://docs.hunter.sh/en/latest/creating-new/create/cmake.html)
-  step by step carefully. **[Yes|No]**
+* I have checked that this pull request contains only
+  `.travis.yml`/`appveyor.yml` changes. All other changes send
+  to https://github.com/ruslo/hunter. **[Yes|No]**
 
-* I've tested this package remotely and have excluded all broken builds.
-  Here is the links to the Travis/AppVeyor with status "All passed":
+* I have checked that no toolchains removed from CI configs, they are commented
+  out instead so other developers can enable them back easily and to simplify
+  merge conflict resolution. **[Yes|No]**
 
-  * https://ci.appveyor.com/project/<username>/hunter/build/<build-number>
-  * https://travis-ci.org/<username>/hunter/builds/<build-number>
+* I have checked that for every commented out toolchain there is a link to the
+  broken CI build page or to the minimum compiler requirements documentation
+  so other developers can figure out what was the problem exactly. **[Yes|No]**
 
 * I have submitted CI configs to https://github.com/cpp-pm/hunter-testing targeting `pkg.template` branch,
   see this merged pull request https://github.com/cpp-pm/hunter-testing/pull/<number>
